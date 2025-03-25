@@ -1,0 +1,108 @@
+.testimonials-swiper {
+  padding: 20px 40px;
+  position: relative;
+  overflow: visible;
+}
+
+.testimonials-swiper .swiper-wrapper {
+  transition-timing-function: linear !important;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.testimonials-swiper .swiper-slide {
+  transition: all 0.3s ease;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  transform-origin: center center;
+}
+
+.testimonials-swiper .swiper-slide-active {
+  transform: scale(1.05) translateZ(0);
+  z-index: 2;
+}
+
+.testimonials-swiper .swiper-slide-prev,
+.testimonials-swiper .swiper-slide-next {
+  opacity: 0.7;
+  transform: scale(0.95) translateZ(-100px);
+}
+
+.testimonials-swiper .swiper-slide-prev {
+  transform: translateX(10%) scale(0.95) translateZ(-100px);
+}
+
+.testimonials-swiper .swiper-slide-next {
+  transform: translateX(-10%) scale(0.95) translateZ(-100px);
+}
+
+.testimonials-swiper .swiper-button-next,
+.testimonials-swiper .swiper-button-prev {
+  color: #3affa3;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.testimonials-swiper .swiper-button-next:hover,
+.testimonials-swiper .swiper-button-prev:hover {
+  background: rgba(58, 255, 163, 0.2);
+  transform: scale(1.1);
+}
+
+.testimonials-swiper .swiper-button-next:after,
+.testimonials-swiper .swiper-button-prev:after {
+  font-size: 20px;
+}
+
+.testimonials-swiper .swiper-pagination-bullet {
+  background: #3affa3;
+  opacity: 0.5;
+  width: 10px;
+  height: 10px;
+  transition: all 0.3s ease;
+}
+
+.testimonials-swiper .swiper-pagination-bullet-active {
+  opacity: 1;
+  background: #3affa3;
+  transform: scale(1.2);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.testimonials-swiper::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  border: 2px solid rgba(58, 255, 163, 0.1);
+  border-radius: 50%;
+  animation: rotate 20s linear infinite;
+}
+
+.testimonials-swiper::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  border: 2px solid rgba(58, 255, 163, 0.05);
+  border-radius: 50%;
+  animation: rotate 15s linear infinite reverse;
+} 
