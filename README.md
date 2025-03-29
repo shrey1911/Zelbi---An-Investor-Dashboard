@@ -41,7 +41,6 @@ A modern, full-stack investment dashboard application that helps investors track
 - Express.js
 - MongoDB
 - JWT Authentication
-- Razorpay Integration
 - Cloudinary for Image Storage
 
 ## 🚀 Getting Started
