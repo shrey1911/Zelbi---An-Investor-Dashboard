@@ -2,6 +2,9 @@
 
 A modern, full-stack investment dashboard application that helps investors track, analyze, and manage their investments efficiently.
 
+# Project Video
+https://drive.google.com/file/d/1lV95vviBO8soMlY1SuYxGdzj-qtuqt9A/view?usp=drive_link 
+
 ## 🌟 Features
 
 - **User Authentication & Authorization**
